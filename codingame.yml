@@ -1,6 +1,4 @@
-title : Content name
+title : Jumping from Angular1 to Angular
 plan:
-  - title: Part 1
-    statement: markdowns/part1.md
-  - title: Part 2
-    statement: markdowns/part2.md
+  - title: Components
+    statement: markdowns/components.md
