@@ -1,5 +1,21 @@
 // Component CSS
 
 .sample {
-  background: #77F;
+  $height: 150px;
+  $width: 300px;
+  $padding: 50px;
+
+  position: fixed;
+  left: calc( (100vw - #{$width}) / 2 - #{$padding});
+  top: calc( (100vh - #{$height}) / 2 - #{$padding});
+
+  height: $height;
+  width: $width;
+
+  padding: $padding;
+
+  background: rgba(white, 0.6);
+
+  border: none;
+  border-radius: 5px;
 }
