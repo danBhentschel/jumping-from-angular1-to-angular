@@ -1,6 +1,10 @@
 You're used to create `component` or directives in Angular1 to make reusable web components. They still exist in Angular, and they're awesome.
 
-# Usage
+Most of the things you will do in Angular will be components.
+
+* Where you used AngularJS directives, you will use components
+* Where you used AngularJS modules, you will almost always use components
+* Where you used AngularJS components, you will use components
 
 # Syntax
 
@@ -32,8 +36,8 @@ class Compo {
 ```
 
 * `selector` is obviously the tag name
-* `templateUrl` is the same as in Angular1, you can also use `template`
-* `styleUrls`, that's the cool new feature as you can add a list of stylesheets to include.
+* `templateUrl` is the same as in Angular1, you can also use inline `template`
+* `styleUrls`, that's the cool new feature as you can add a list of stylesheets to include. You can also use inline `styles`
 
 The class serves as a controller for your component.
 
@@ -47,7 +51,7 @@ Refer to [the official Component documentation](https://angular.io/docs/ts/lates
 
 ## What happened to...
 
-### `$onInit`, `$onDestroy`, `$onChanges`?
+### The `$onInit`, `$onDestroy`, `$onChanges` hooks?
 
 Angular component have a series of lifecycle hooks you can use. A complete list and guide are [available here](https://angular.io/docs/ts/latest/guide/lifecycle-hooks.html).
 
