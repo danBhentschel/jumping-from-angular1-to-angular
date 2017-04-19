@@ -2,3 +2,6 @@ title : Jumping from Angular1 to Angular
 plan:
   - title: Components
     statement: markdowns/components.md
+projects:
+  angular2:
+   root: projects
