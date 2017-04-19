@@ -43,7 +43,7 @@ The class serves as a controller for your component.
 
 Cleaner. Leaner. Let's try it out:
 
-@[Component demo]({"stubs": ["components/app/sample.ts"], "command": "echo 'CG> open --static-dir=/project/target/components /'"})
+@[Component demo]({"stubs": ["components/app/sample.ts", "run.sh"], "command": "/bin/bash /project/target/run.sh"})
 
 # Advanced
 
