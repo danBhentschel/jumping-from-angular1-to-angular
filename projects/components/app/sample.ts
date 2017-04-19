@@ -3,8 +3,11 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'sample',
-  templateUrl: './sample.html',
-  styleUrls: ['./sample.scss'],
+  template: `
+  	<div class="sample">
+  		<span *ngIf="iMadeIt">Yay, it works \\o/</span>
+  	</div>
+  `
 })
 
 export class SampleComponent {
