@@ -28,7 +28,7 @@ class Compo {
 
 Let's try it out, shall we?
 
-@[Input demo]({"stubs": ["input/app/box.ts", "input/app/app.component.ts"], "command": "ls -la /project/target/ ; echo 'CG> open --static-dir /project/target/input index.html'"})
+@[Input demo]({"stubs": ["input/app/box.ts", "input/app/app.component.ts"], "command": "ls -la /project/target/input/ ; echo 'CG> open --static-dir /project/target/input index.html'"})
 
 # Events (output)
 
