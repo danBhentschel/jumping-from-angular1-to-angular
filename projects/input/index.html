@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Angular 2 - Supra crunchy</title>
+    <script src="https://unpkg.com/systemjs@0.19.38/dist/system.src.js"></script>
+    <script src="https://code.angularjs.org/tools/typescript.js"></script>
+    <script src="system.config.js"></script>
+    <!-- Set the base href, demo only! In your app: <base href="/"> -->
+    <script>document.write('<base href="' + document.location + '" />');</script>
+    <style type="text/css">
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      html{
+        background: url('https://images.unsplash.com/35/SRkdurVYQFSFkMyHVwSu_spinnenweb-9536.jpg?dpr=1&auto=format&fit=crop&w=900&h=600&q=80&cs=tinysrgb&crop=&bg=') center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 100vh;
+      }
+
+      body {
+        font: 20px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        line-height: 1.3em;
+        font-weight: 300;
+        
+        color: #303030;
+        min-width: 230px;
+        max-width: 500px;
+        margin: 0 auto;
+      }
+      .app {
+        margin: 15% auto;
+        width: 500px;
+      }
+
+      p {
+        background: rgba(255,255,255, 0.6);
+        padding: 5px 30px;
+        border: none;
+        border-radius: 5px;
+        font-weight: 600;
+        margin-top: 15px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <app>Loading...</app>
+    
+    <script>
+      System.import('app');
+    </script>
+  </body>
+
+</html>
