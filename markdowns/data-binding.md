@@ -28,7 +28,7 @@ class Compo {
 
 Let's try it out, shall we?
 
-@[Output demo]({"stubs": ["input/app/box.ts", "input/app/app.component.ts"], "command": "echo 'CG> open --static-dir /project/target/input index.html'"})
+@[Input demo]({"stubs": ["input/app/box.ts", "input/app/app.component.ts"], "command": "echo 'CG> open --static-dir /project/target/output index.html'"})
 
 # Events (output)
 
