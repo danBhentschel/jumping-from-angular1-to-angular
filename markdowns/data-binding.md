@@ -42,7 +42,7 @@ And guess what, a bunch of events already exist, they are the [existing DOM even
 <button (click)="clickButton()">
 ```
 
-Cool. But you can also define your own output events, using the *EventEmitter* system. Let's say, you want to create a `delete` event that is triggered when the user deletes an item in a list, you will define an event emitter with the `@Output` decorator, and will use it to send events with the `next` method. It will then be exposed to the parent component via the `(delete)` attribute. Here's a simple snippet:
+Cool. But you can also define your own output events, using the *EventEmitter* system. Let's say, you want to create a `highlight` event that is triggered when the user highlights an *item* in a *list*, you will define an event emitter with the `@Output` decorator, and will use it to send events with the `next` method. It will then be exposed to the parent component via the `(highlight)` attribute. Here's a simple snippet:
 
 @[Output demo]({"stubs": ["output/app/list.ts", "output/app/app.component.ts"], "command": "echo 'CG> open --static-dir /project/target/output index.html'"})
 
