@@ -11,7 +11,6 @@ Most of the things you will do in Angular will be components.
 In Angular1, declaring a component used to be like this:
 
 ```javascript
-
 theModule.component('componentName', {
   templateUrl: 'path/to/template.html',
   controller: function() {
@@ -20,22 +19,22 @@ theModule.component('componentName', {
 });
 ```
 
-But hey, how does it work? How do I use this component in a template? Will it be `<componentName>` or `<component-name>`? What if I want to specify a custom tag name?
+But hey, how does it work? How do I use this component in a template? Will it be `<componentName>` or `<component-name>`? What if I want to specify a custom tag name that is different from the name of the component?
 
-Let's look at how angular does it. You need a class and a `@Component` decorator:
+Let's look at how Angular does it. You need a class and a `@Component` decorator:
 
 ```javascript
 @Component({
   selector: 'compo',
   templateUrl: './compo.html',
-  styleUrls: ['./compo.scss'],
+  styleUrls: ['./compo.css'],
 })
 class Compo {
   awesome: string = 'yes';
 }
 ```
 
-* `selector` is obviously the tag name
+* `selector` is the tag name
 * `templateUrl` is the same as in Angular1, you can also use inline `template`
 * `styleUrls`, that's the cool new feature as you can add a list of stylesheets to include. You can also use inline `styles`
 
@@ -57,10 +56,10 @@ Refer to [the official Component documentation](https://angular.io/docs/ts/lates
 
 Angular component have a series of lifecycle hooks you can use. A complete list and guide are [available here](https://angular.io/docs/ts/latest/guide/lifecycle-hooks.html).
 
-But if you want to use one, first thing first you will need to import it from the angular core library:
+But if you want to use one, for instance `OnInit`, first thing first you will need to import it from the angular core library:
 
 ```javascript
-import { OnInit } from '@angular/core'; 
+import { OnInit } from '@angular/core';
 ```
 
 Then, you will need to have your component class implement `OnInit` (and any other hook you need):
@@ -82,18 +81,22 @@ ngOnInit() {
 }
 ```
 
-Let's try it out.
-
 ### Transclusion?
 
 AngularJS directives used to have a `transclude` property, now by default Angular components support transclusion. Just use the `<ng-content>` tag in your template like so:
 
 ```html
 <div class="component">
-  <ng-content></ng-content>
+  <ng-content><!-- Transcluded data, if any, will come here --></ng-content>
 </div>
+```
+
+And call your component with data that is going to be transcluded automatically
+
+```html
+<my-component>Data to be transcluded</my-component>
 ```
 
 ### Data Bindings?
 
-Well, that's going to be a separate lesson ;) Let's meet in the new one!
+Well, that's going to be a separate lesson ;) Let's meet in the next one!
