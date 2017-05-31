@@ -44,6 +44,19 @@ Cleaner. Leaner. Let's try it out:
 
 @[Component demo]({"stubs": ["components/app/sample.ts"], "command": "echo 'CG> open --static-dir /project/target/components index.html'"})
 
+You need to declare your components in your `@NgModule`, in order to register it and be able to use it. Add it to the list of component declarations of your module:
+
+```javascript
+@NgModule({
+  ...
+  declarations: [
+    TheComponent,
+    ...
+  ],
+  ...
+}
+```
+
 # Advanced
 
 There are [a bunch](https://angular.io/docs/ts/latest/api/core/index/Component-decorator.html) of other properties to the `@Component` decorator, like a list of `providers` it will use. You need to reference these providers if your component uses them.
