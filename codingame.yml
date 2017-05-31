@@ -4,6 +4,8 @@ plan:
     statement: markdowns/components.md
   - title: Data Binding
     statement: markdowns/data-binding.md
+  - title: Injectables and Services
+    statement: markdowns/injectables.md
 projects:
   angular2:
    root: projects
