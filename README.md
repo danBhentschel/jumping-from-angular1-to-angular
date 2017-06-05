@@ -3,7 +3,7 @@ This course aims at showing the basics of the Angular framework ( version >= 2.0
 
 [Jumping from Angular 1 to Angular](https://tech.io/playgrounds/252/jumping-from-angular-1-to-angular)
 
-============
+------------
 
 ## Requirements
 Knowledge of JavaScript, the npm ecosystem and a general knowledge of frontend frameworks is required. The course is aimed at developers having some knowledge of AngularJS (v1.X) wanting to transition towards version >=2.0.
