@@ -42,11 +42,4 @@ constructor(
 }
 ```
 
-The type of the parameter is the name of the class you want to inject.
-
-# How to declare...
-
-## Angular / Third-Party classes
-
-## Your own values
-
+The type of the parameter is the name of the class you want to inject. Making the injectable `public` will make it accessible by the template.
