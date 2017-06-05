@@ -1,7 +1,7 @@
 # Installing the Angular cli
-**You can run all of the examples in this course online, so you can skip directly to _The Application Module_. This part is here if you want to start an Angular project on your own computer**
+**you can skip this part and go directly to _The Application Module_ if you simply want to run all of the examples in this course online. This part is here if you want to start an Angular project on your own computer.**
 
-The simplest way to get started with Angular is to use the [Angular CLI](https://cli.angular.io/). It is a command line interface that helps you initialize a project, initialize modules and components, and serve you application on a local server for development purposes.
+The simplest way to get started with Angular is to use the [Angular CLI](https://cli.angular.io/). It is a command line interface that helps you initialize a project, initialize modules and components, and serve your application on a local server for development purposes.
 
 Once you have NPM set up, you can install the Angular CLI with this command:
 
@@ -15,7 +15,7 @@ Then use the `new` command to bootstrap a project.
 ng new awesome-project
 ```
 
-This will run for a while and create a fully functionnal Angular project. Let's take a look at the folder structure:
+This will run for a while and create a fully functionnal Angular project. If you want to run your app on a local server, use `ng serve`. Let's take a look at the folder structure:
 
 ```
 awesome-project/
@@ -35,9 +35,9 @@ awesome-project/
 └── tslint.json
 ```
 
-Some files are not listed here because they are out of the scope of this course. Most of them are config files used to run tests with karma or protractor. Let's review the other ones, and I definitely recommend you look at them later.
+Some files are not listed here because they are out of the scope of this course. Most of them are config files used to run tests with karma or protractor. I definitely recommend you look at them later, but for now, let's focus on:
 
-* the `assets` folder is the place you put your graphical assets, possibly some CSS sheets, and resources
+* the `assets` folder, is the place you put your graphical assets, possibly some CSS sheets, and resources
 * the `environments` folder has two files, a general config file and a production config file. You can use them to set different config values (like API tokens or log levels) between run environments
 * `index.html` is the root HTML template for the page
 * `main.ts` is the entry point for the application. it actually calls the AppModule we're going to study right now
@@ -84,6 +84,8 @@ Finally, `bootstrap` defines the entry point for the **module**, the component t
 platformBrowserDynamic().bootstrapModule(AppModule);
 ```
 
-That defines that the main module of the app is going to be our `AppModule` class.
+It defines that the main module of the app is going to be our `AppModule` class.
 
 > An `@NgModule` in Angular 2 is very similar to the `angular.module()` in Angular 1, you use it to declare dependencies and components for your app.
+
+[More info on NgModule](https://angular.io/docs/ts/latest/guide/ngmodule.html).
