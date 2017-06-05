@@ -1,5 +1,7 @@
 title : Jumping from Angular1 to Angular
 plan:
+  - title: Bootstraping the Application
+    statement: markdowns/init.md
   - title: Components
     statement: markdowns/components.md
   - title: Data Binding
