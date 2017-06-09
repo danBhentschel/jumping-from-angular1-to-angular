@@ -59,7 +59,7 @@ You need to declare your components in your `@NgModule`, in order to register it
 
 # Advanced
 
-There are [a bunch](https://angular.io/docs/ts/latest/api/core/index/Component-decorator.html) of other properties to the `@Component` decorator, like a list of `providers` it will use. You need to reference these providers if your component uses them.
+There are a bunch of other properties to the `@Component` decorator, like a list of `providers` it will use. You need to reference these providers if your component uses them.
 
 Refer to [the official Component documentation](https://angular.io/docs/ts/latest/api/core/index/Component-decorator.html) for a list of usable properties.
 

@@ -2,13 +2,13 @@ Let's take a look at how Data-Binding works in Angular. Displaying stuff in your
 
 # Variables (input)
 
-You use input binding to pass the value of a variable to a child component. In Angular1 you used to do
+You use input binding to pass the value of a variable to a child component. In **Angular1** you used to do
 
 ```html
 <directive child-name="scopeVariable">
 ```
 
-But now, you will use the `[]` square bracket notation, like so
+But now with **Angular**, you will use the `[]` square bracket notation, like so
 
 ```html
 <directive [childName]="scopeVariable">
