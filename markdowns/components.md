@@ -1,4 +1,4 @@
-You're used to create `component` or directives in Angular1 to make reusable web components. They still exist in Angular, and they're awesome.
+You're used to creating `component` or directives in Angular1 to make reusable web components. They still exist in Angular, and they're awesome.
 
 Most of the things you will do in Angular will be components.
 
@@ -67,9 +67,9 @@ Refer to [the official Component documentation](https://angular.io/docs/ts/lates
 
 ### The `$onInit`, `$onDestroy`, `$onChanges` hooks?
 
-Angular component have a series of lifecycle hooks you can use. A complete list and guide are [available here](https://angular.io/docs/ts/latest/guide/lifecycle-hooks.html).
+Angular components have a series of lifecycle hooks you can use. A complete list and guide are [available here](https://angular.io/docs/ts/latest/guide/lifecycle-hooks.html).
 
-But if you want to use one, for instance `OnInit`, first thing first you will need to import it from the angular core library:
+But if you want to use one, for instance `OnInit`, you will first need to import it from the angular core library:
 
 ```javascript
 import { OnInit } from '@angular/core';
@@ -86,7 +86,7 @@ class Compo implements OnInit {
 }
 ```
 
-And then you can add a `ngOnInit` function to this component class:
+And then you can add an `ngOnInit` function to this component class:
 
 ```javascript
 ngOnInit() {
