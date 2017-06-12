@@ -32,7 +32,7 @@ Let's try it out, shall we?
 
 # Events (output)
 
-Two-ways binding doesn't really exist in Angular anymore, so when you want to send data upward to the parent component, you need to use events. Events are defined with the `()` notation like this:
+Two-way binding doesn't really exist in Angular anymore, so when you want to send data upward to the parent component, you need to use events. Events are defined with the `()` notation like this:
 
 ```html
 <directive (theEvent)="theScopeFunction($event)">
@@ -60,7 +60,7 @@ Cool. But you can also define your own output events, using the *EventEmitter* s
 
 ### `ng-model`?
 
-`ngModel` is a bit different because it is both downward and upward, both input and output, right? No worries, Angular got you covered:
+`ngModel` is a bit different because it is both downward and upward, both input and output, right? No worries, Angular has got you covered:
 
 ```html
 <input [(ngModel)]="scopeVariable">
