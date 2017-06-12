@@ -1,4 +1,4 @@
-The Angular Dependency Injection system allows you inject, into your components, classes and values for you to use, for instance as services. _Injectable_s can be Angular services (such as the [Http class](https://angular.io/docs/ts/latest/api/http/index/Http-class.html)), third-party services (like [ngx-translate](https://github.com/ngx-translate/core)), your own classes or even object values.
+The Angular Dependency Injection system allows you inject, into your components, classes and values for you to use, for instance as services. <em>Injectable</em>s can be Angular services (such as the [Http class](https://angular.io/docs/ts/latest/api/http/index/Http-class.html)), third-party services (like [ngx-translate](https://github.com/ngx-translate/core)), your own classes or even object values.
 
 # Declaration
 
