@@ -1,4 +1,4 @@
-You're used to creating `component` or directives in Angular1 to make reusable web components. They still exist in Angular, and they're awesome.
+You're used to creating `component`s or directives in Angular1 to make reusable web components. They still exist in Angular, and they're awesome.
 
 Most of the things you will do in Angular will be components.
 
